@@ -59,6 +59,9 @@ class ModelArguments:
     prefix_projection: bool = field(
         default=False
     )
+    server_port: Optional[int] = field(
+        default=7860
+    )
 
 
 @dataclass

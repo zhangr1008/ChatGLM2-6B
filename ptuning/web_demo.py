@@ -159,7 +159,7 @@ def main():
         model.transformer.prefix_encoder.float()
     
     model = model.eval()
-    demo.queue().launch(share=False, inbrowser=True)
+    demo.queue().launch(server_name="0.0.0.0", server_port=7860, share=False, inbrowser=True)
 
 
 
